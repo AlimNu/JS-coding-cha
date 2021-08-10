@@ -1,16 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport"
-        content="width=device-width,
-        initial-scale=1.0" />
-        <title>Tittle</title>
-        <link rel="StyleSheet"
-        href="style.css"/>
-        <script src="script.js" defer></script>
-    </head>
-    <body>
-        <h2>JS Challenge</h2>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,
+        initial-scale=1.0"
+    />
+    <title>Recipe Application</title>
+    <link rel="StyleSheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="mobile-container">
+      <div class="search-bar-container">
+        <header>
+          <div class="dropdown">
+            <button onclick="myFunction()" id="dropbtn" class="dropbtn">
+              <i class="fa fa-bars"></i>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+          <input type="text" name="searchInput" id="searchInput" />
+          <button id="search" class="btn"><i class="fa fa-search"></i></button>
+        </header>
+      </div>
+      <div class="fav-container">
+        <h3>Favorite Meals</h3>
+        <ul class="fav-meals" id="fav-meals"></ul>
+      </div>
+      <div class="meals" id="meals"></div>
+    </div>
+    <div class="popup-container hidden" id="meal-popup">
+      <div class="popup">
+        <button id="close-popup" class="close-popup">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="meal-info" id="meal-info"></div>
+      </div>
+    </div>
+  </body>
 </html>
